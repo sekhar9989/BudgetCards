@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoRecords" customModule="SeCards" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NoRecords" customModule="SeCards" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="578" height="266"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YZV-ji-m3g">
+                    <rect key="frame" x="0.0" y="44" width="578" height="188"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-folder" translatesAutoresizingMaskIntoConstraints="NO" id="mmO-6K-p3k">
+                            <rect key="frame" x="249" y="54" width="80" height="80"/>
+                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="Aho-ba-xIV"/>
+                                <constraint firstAttribute="width" secondItem="mmO-6K-p3k" secondAttribute="height" multiplier="1:1" id="RDD-VM-9L1"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No recipes found" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T30-zn-jxW">
+                            <rect key="frame" x="20" y="154" width="538" height="21.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="mmO-6K-p3k" firstAttribute="centerX" secondItem="YZV-ji-m3g" secondAttribute="centerX" id="7gj-y1-NXY"/>
+                        <constraint firstAttribute="trailing" secondItem="T30-zn-jxW" secondAttribute="trailing" constant="20" id="Zuq-hN-Nt5"/>
+                        <constraint firstItem="T30-zn-jxW" firstAttribute="centerX" secondItem="YZV-ji-m3g" secondAttribute="centerX" id="ep6-XM-EYg"/>
+                        <constraint firstItem="T30-zn-jxW" firstAttribute="top" secondItem="mmO-6K-p3k" secondAttribute="bottom" constant="20" id="t9y-YQ-Xuh"/>
+                        <constraint firstItem="T30-zn-jxW" firstAttribute="leading" secondItem="YZV-ji-m3g" secondAttribute="leading" constant="20" id="u7v-dl-ROA"/>
+                        <constraint firstItem="mmO-6K-p3k" firstAttribute="centerY" secondItem="YZV-ji-m3g" secondAttribute="centerY" id="x64-vT-nsI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="YZV-ji-m3g" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="12o-dk-55B"/>
+                <constraint firstItem="YZV-ji-m3g" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="CI8-1E-qeD"/>
+                <constraint firstItem="YZV-ji-m3g" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="cK4-0J-cxO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="YZV-ji-m3g" secondAttribute="trailing" id="eDK-TR-FIL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imgVw" destination="mmO-6K-p3k" id="2W8-al-E9a"/>
+                <outlet property="lbl" destination="T30-zn-jxW" id="3VR-tF-GeK"/>
+            </connections>
+            <point key="canvasLocation" x="301.44927536231887" y="1.3392857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="empty-folder" width="512" height="512"/>
+    </resources>
+</document>
